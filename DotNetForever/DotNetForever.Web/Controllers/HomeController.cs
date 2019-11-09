@@ -11,13 +11,14 @@ namespace DotNetForever.Web.Controllers
     public class HomeController : Controller
     {
         ProductManager _productManager=new ProductManager();
+
         CategoryManager _categoryManager=new CategoryManager();
         // GET: Home
         public ActionResult Index()
         {
             return View();
         }
-
+	[HttpGet]
         public ActionResult SideMenu()
         {
 
